@@ -1,0 +1,14 @@
+# Build
+
+- Install docker
+- Run `DOCKER_BUILDKIT=1 docker build --output ./output .`
+- `symbol.bin` and `symbol.iso` project are now found in `./output`
+
+# Run
+
+To run locally, `apt install qemu-common` and run one of
+
+- `qemu-system-i386 -kernel symbol.bin`
+- `qemu-system-i386 -cdrom symbol.iso`
+
+Alternatively, burn a USB drive or optical disc and boot on any x86 computer.
