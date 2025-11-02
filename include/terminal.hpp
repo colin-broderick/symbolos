@@ -4,9 +4,9 @@
 namespace Terminal
 {
     void initialise();
-    void setcolour(const VGAColour colour);
     void write_string(const char* data);
     void write_line(const char* data);
+    void scroll();
 }
 
 #endif // SYMBOL_TERMINAL_HPP

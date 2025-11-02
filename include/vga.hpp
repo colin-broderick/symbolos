@@ -28,6 +28,6 @@ enum class VGAColour : uint8_t
 };
 
 VGAColour vga_entry_colour(const VGAColour foreground, const VGAColour background);
-uint16_t vga_entry(const unsigned char uc, const VGAColour colour);
+uint16_t vga_entry(const unsigned char character, const VGAColour colour);
 
 #endif // SYMBOL_VGA_HPP

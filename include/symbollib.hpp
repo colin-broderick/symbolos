@@ -1,3 +1,6 @@
 #include <cstdint>
 
-std::size_t strlen(const char* str);
+namespace String
+{
+    std::size_t length(const char* string);
+}

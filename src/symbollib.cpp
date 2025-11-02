@@ -1,11 +1,14 @@
 #include <cstdint>
 
-std::size_t strlen(const char* str)
+namespace String
 {
-    std::size_t len = 0;
-    while (str[len])
+    std::size_t length(const char* string)
     {
-        len++;
+        std::size_t length = 0;
+        while (string[length])
+        {
+            length++;
+        }
+        return length;
     }
-    return len;
 }
